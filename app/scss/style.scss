@@ -4,6 +4,10 @@
 
 // start header
 
+.header {
+  background-color: #fff;
+}
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -114,6 +118,7 @@
 }
 
 .basket {
+  margin-right: 20px;
   span {
   background-color: $green;   
   }
@@ -130,7 +135,7 @@
 }
 
 .user {
-  margin-left: 20px;
+  // margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -196,7 +201,10 @@
   height: 0;
   overflow: hidden;
   transition: all 0.5s;
+  z-index: 1;
 }
+
+// ctrl-f вызов меню поиска
 
 .user__box,
 .basket__box,
@@ -335,6 +343,12 @@
   color: $tomato;
 }
 
+.header__btn-menu,
+.menu__btn {
+  display: none;
+}
+
+
 // ehd header
 // start search
 
@@ -407,7 +421,7 @@
 
 .products {
   padding: 110px 0;
-  background-color: $grey;
+  background-color: #fff;
 }
 
 .products__inner-btn {
@@ -1243,3 +1257,9 @@ button.icon-unsorted {
 }
 // end product-page
 
+
+
+
+
+// медиа, данные файлы всегда должны быть самыми последними в css
+@import 'media';
