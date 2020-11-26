@@ -1723,13 +1723,15 @@ button.icon-unsorted {
 // end product
 // start 404-page
 
-.page-404__wrapper {
+.page-404__wrapper,
+.about__wrapper {
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 50px;
 }
 
-.page-404__head {
+.page-404__head,
+.about__head {
   font-size: 24px;
   color: #444444;
   @include f500;
@@ -1786,7 +1788,26 @@ button.icon-unsorted {
 }
 
 // end 404-page
+// start about
 
+.about__inner {
+  padding: 0 50px;
+}
+
+.about__box {
+  h3 {
+    font-size: 20px;
+    @include f700;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+// end about
 
 
 
